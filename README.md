@@ -5,6 +5,7 @@ You can start with the following steps:
 - Create and load a Python virtual environment:
 
 > python3 -m venv ~/.virualenvs/flask_env
+
 > source ~/.virualenvs/flask_env/bin/activate
 
 - Install the requirements:
