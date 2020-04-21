@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prodev Popayán 2020</title>
+  </head>
+
+  <body>
+    <h1>Eventos Prodev Popayán 2020</h1>
+    <p>Evento: {{event.name}}</p>
+    <p>Fecha: {{event.date}}</p>
+    <p>
+      {{message}}
+    </p>
+    <p>
+      <a href="{{ url_for('welcome') }}">Home</a>
+      <button>
+        {% if index < max_index%}
+        <!-- <a href="/event/{{ index + 1 }}">Next event</a> -->
+        <a href="{{ url_for('event_view', index=index+1) }}">Next event</a>
+        {% else %}
+        <!-- <a href="/event/{{ index + 1 }}">Next event</a> -->
+        <a href="{{ url_for('event_view', index=0) }}">Start over</a>
+        {% endif %}
+      </button>
+    </p>
+    <!-- <img src="/static/flask.png" /> -->
+  </body>
+</html>

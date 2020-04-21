@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Prodev Popayán 2020</title>
+  </head>
+
+  <body>
+    <h1>Prodev Popayán 2020</h1>
+    <p>
+      <a href="https://prodev.com.co">Prodev</a>: desarrolladores profesionales
+      en tecnologías de punta en la industría del Software.
+    </p>
+    <p>
+      {{message}}
+    </p>
+    <h2>Eventos:</h2>
+    <ul>
+      {% for event in events%}
+      <li>
+        <a href="{{ url_for('event_view', index=loop.index0) }}"
+          >{{ event.name }}</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+
+    <!-- <img src="/static/flask.png" /> -->
+  </body>
+</html>

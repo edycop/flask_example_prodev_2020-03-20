@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Borrar un evento Prodev Popayán 2020</title>
+  </head>
+
+  <body>
+    <h2>Borrar un evento</h2>
+    <p>Evento: {{event.name}}</p>
+    <p>Fecha: {{event.date}}</p>
+
+    <p>Estas seguro?</p>
+    <form method="POST">
+      <button type="submit">Sí</button>
+      <a href="{{ url_for('welcome') }}">No</a>
+    </form>
+  </body>
+</html>

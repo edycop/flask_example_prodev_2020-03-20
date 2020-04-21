@@ -1,0 +1,11 @@
+[
+  { "name": "Desarrollo web con Python", "date": "20-03-2020" },
+  {
+    "name": "Programaci\u00f3n Orientada a Objetos con Python",
+    "date": "06-03-2020"
+  },
+  { "name": "Fundamentos de Python", "date": "21-02-2020" },
+  { "name": "Amazon Web Services - API Gateway", "date": "29-11-2019" },
+  { "name": "Fundamentos de Docker - Docker Compose", "date": "04-10-2019" },
+  { "name": "Fundamentos de JavaScript", "date": "2020-04-03" }
+]
